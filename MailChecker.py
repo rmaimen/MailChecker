@@ -6,7 +6,7 @@
     IMAP4でメールサーバーに接続し、新着メールがない確認する。
 
     動作確認環境
-        python:     3.8.6
+        python:         3.8.6
         imapclient:     2.2.0
 """
 import sys
