@@ -1,0 +1,6 @@
+{
+	"server": "imap@example.com",
+	"port": "993",
+	"user": "sample@example.com",
+	"password": "P@ssW0rd"
+}

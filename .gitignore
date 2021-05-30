@@ -1,0 +1,8 @@
+.vscode
+dist
+build
+Pipfile
+Pipfile.lock
+settings.json
+settings_hoshika.json
+MailChecker.spec
