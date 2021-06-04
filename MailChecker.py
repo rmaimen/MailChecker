@@ -75,7 +75,7 @@ def push():
                 responses = imap.idle_check(timeout=setting["wait_time"])
                 if len(responses) != 0:
                     for response in responses:
-                        print("\rServer sent:", response)
+                        # print("\rServer sent:", response)
                         if response[1] == b"EXISTS":
                             # 新着メールあり
                             print("\r新着メールがありました。")
@@ -84,7 +84,7 @@ def push():
                             # ログアウトされた
                             imap = connection()
             except (imaplib.IMAP4.abort, exceptions.ProtocolError) as e:
-                print("接続が切れました。！".format(retry_count))
+                print("接続が切れました！".format(retry_count))
                 print(e)
                 imap = connection()
                 retry_count += 1
